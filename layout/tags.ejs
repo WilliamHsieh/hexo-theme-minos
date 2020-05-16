@@ -10,7 +10,7 @@
         <div class="columns is-variable is-1 is-multiline is-mobile">
             <% (page._tags || page.tags).forEach(tag => {%>
             <span class="column is-narrow">
-                <a class="tag is-light article-tag" href="<%= url_for(tag.path) %>">#<%= tag.name %>&nbsp;(<%= tag.posts.length%>)</a>
+                <a class="tag is-light article-tag" href="<%= url_for(tag.path) %>"><%= tag.name %>&nbsp;(<%= tag.posts.length%>)</a>
             </span>
             <% }) %>
         </div>
