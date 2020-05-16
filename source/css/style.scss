@@ -1,11 +1,12 @@
-$family-serif: "Ovo", "Georgia", "STZhongsong", "Microsoft YaHei", serif;
+$family-serif: "Noto Sans TC", "Microsoft YaHei", "Georgia", "STZhongsong", serif;
 $family-mono: "Source Code Pro", monospace, "Microsoft YaHei";
 $border-color: #dbdbdb;
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
 
 body, button, input, select, textarea {
     font-family: $family-serif;
 }
-
 
 a.tag.article-tag {
     font-size: 0.9rem;
@@ -63,7 +64,7 @@ a.tag.article-tag {
 
     .article-meta {
         font-size: .9rem;
-        text-transform: uppercase;
+        // text-transform: uppercase;
 
         @media screen and (max-width: 768px) {
             margin-top: 0.75rem;
@@ -438,7 +439,7 @@ a.tag.article-tag {
 }
 
 code, pre {
-    font-size: 0.85rem;
+    font-size: 0.95rem;
     font-family: $family-mono;
 }
 
