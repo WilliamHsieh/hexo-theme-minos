@@ -20,11 +20,9 @@
         <% (page._categories || page.categories).forEach(category => { %>
         <div class="archive content">
             <h4 class="title is-4" id="<%= category %>">
-                <span id="<%= category.name %>">
-                    <a style="color: black;" href="<%= url_for(category.path) %>">
-                        <i class="far fa-folder"></i> <%= category.name %>
-                    </a>
-                </span>
+                <a id="<%= category.name %>" style="color: black;" href="<%= url_for(category.path) %>">
+                    <i class="far fa-folder"></i> <%= category.name %>
+                </a>
             </h4>
             <div class="articles">
                 <% category.posts.sort('date', -1).forEach(post => { %>
